@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tigresse D'or | Inicio</title>
+        <link rel="icon" href="img/logo-tigresse-dor.png">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img class="logo-img" src="img/logo-tigresse-dor.png"></a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <a href="#orden-section">Ordenar</a>
+                <a href="insumos.html">Insumos Restantes</a>
+                <a href="ubicacion.html">Encuéntranos</a>
+            </nav>
+        </div>
+        <div class="clearfix"></div>
+    </header>
+    <body>
+        <div class="actual-body">
+            <div class="section1">
+                <h1 class="welcome">Bienvenue!</h1>
+                
+                <div class="section-title">
+                    <h2 id="menu-section"> Menú </h2>
+                    <h3><a href="#orden-section" class="jump-link">Ir a Ordenar</a></h3>
+                </div>
+                <div class="table-div">
+                    <h4 class="table-title">Sabores de Pastel Disponibles</h4>
+                    <table>
+                        <tr>
+                            <th>Sabor</th>
+                            <th>Ingredientes a notar</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>Chocolate</td>
+                            <td> Incluye betún de chocolate encima </td>
+                            <td> $5.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Vainilla</td>
+                            <td> Incluye betún y adorno flor de vainilla </td>
+                            <td> $5.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Fresa</td>
+                            <td> Incluye fresas encima </td>
+                            <td> $10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pistache</td>
+                            <td> Puede tener pedazos de pistache </td>
+                            <td> $15.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Plátano</td>
+                            <td> Incluye plátano rebanado encima </td>
+                            <td> $10.00 </td>
+                        </tr>
+                    </table>
+                    <br> <br> <br>
+                    <h4 class="table-title">Adornos de Pastel Disponibles</h4>
+                    <table>
+                        <tr>
+                            <th>Adorno</th>
+                            <th>Ingredientes a notar</th>
+                            <th>Precio</th>
+                        </tr>
+                        <tr>
+                            <td>Sombrillas </td>
+                            <td>El palillo es un popote de chocolate, la tela es chocolate amoldado</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate con almendra</td>
+                            <td>Incluyen almendra, pedazos de maní por dentro </td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Cortinas </td>
+                            <td>Betún de vainilla que adorna alrededor del pastel como una cortina. </td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Brillo</td>
+                            <td>Brillo comestible </td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Pops</td>
+                            <td>Incluye cake pops con patrón de tigre de bengala, colocados sobre el pastel</td>
+                            <td>$15.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="color-space"><br><br><br><br></div>
+            <div class="section2">
+                <div class="section-title">
+                    <h2 id="orden-section">Ordena tu pastel</h2>
+                    <h3><a href="#menu-section" class="jump-link">Subir al menú</a></h3>
+                </div>
+                <form class="user-order" action="index.html" method="POST">
+                    <label for="descripcion">Descripción general del pastel</label> <br>
+                    <input type="textarea" id="descripcion" name="descripcion"> <br><br>
+                    <h4 class="order-instruction"> Elige tus sabores</h4>
+                    <div class="sabores"> 
+                        <input type="checkbox" id="sabor1" name="sabor1" value="chocolate"><label for="sabor1">Chocolate</label> <br>
+                        <input type="checkbox" id="sabor2" name="sabor2" value="vainilla"><label for="sabor2">Vainilla</label> <br>
+                        <input type="checkbox" id="sabor3" name="sabor3" value="fresa"><label for="sabor3">Fresa</label> <br>
+                        <input type="checkbox" id="sabor4" name="sabor4" value="pistache"><label for="sabor4">Pistache</label> <br>
+                        <input type="checkbox" id="sabor5" name="sabor5" value="platano"><label for="sabor5">Plátano</label> <br>
+                    </div>
+                    <h4 class="order-instruction"> Elige tus adornos</h4> <br>
+                    <div class="adornos">
+                        <input type="checkbox" id="adorno1" name="adorno1" value="sombrillas"><label for="adorno1">Sombrillas</label> <br>
+                        <input type="checkbox" id="adorno2" name="adorno2" value="almondem"><label for="adorno2">M&M de Almendras</label> <br>
+                        <input type="checkbox" id="adorno3" name="adorno3" value="cortinas"><label for="adorno3">Cortinas</label> <br>
+                        <input type="checkbox" id="adorno4" name="adorno4" value="brillo"><label for="adorno4">Brillo</label> <br>
+                        <input type="checkbox" id="adorno5" name="adorno5" value="pops"><label for="adorno5">Pops</label><br>
+                    </div>
+                    <h3 class="order-instruction">Ingresa tus datos para identificarte</h3>
+                    <label for="nombre">Nombre Completo</label> <br>
+                    <input type="text" id="nombre" name="nombre"> <br>
+                    <label for="telefono">Número de Teléfono (puede ser Celular)</label> <br>
+                    <input type="tel" id="telefono" name="telefono" maxlength="10"> <br>
+                    <label for="correo">Correo Electrónico</label> <br>
+                    <input type="email" id="correo" name="correo"> <br> <br>
+                    <input type="submit" id="submit" name="submit" value="Terminar">
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <h2>Encuéntranos</h2>
+        <h5>Dirección: Calle del Tigre #123 Colonia Centro, Guadalajara, Jalisco</h5>
+        <h5>Teléfono: 555-55555</h5>
+        <a href="ubicacion.html">Horarios de Atención</a>
+    </footer>
+</html>
